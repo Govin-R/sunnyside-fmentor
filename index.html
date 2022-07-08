@@ -17,9 +17,34 @@
 		}
 		#top{
 			background-image:URL('./images/mobile/image-header.jpg');
-			background-size:100% 100%;
+			background-size:100% ;
 			background-repeat:no-repeat;
+			height:40rem;
+			padding:2rem;
+					}
+		#top-two{
+			display:grid;
+			position:relative;
+			height:90%;
+			grid-template-rows:auto auto;
+			place-items:center;
 		}
+		#top-two h1{
+			border:0;
+			margin:0;
+			font-size:3rem;
+			text-transform:uppercase;
+			text-align:center;
+		}
+		#top-two img{
+			
+		}
+
+		#nav section{
+			float:right;
+		
+		}
+
 		#two-explain{
 			display:grid;
 		
@@ -75,6 +100,8 @@
 			list-direction:outside;
 		}
 
+	
+
 
 
 
@@ -86,16 +113,18 @@
 		<img src="./images/logo.svg" alt="branding logo"/>
 		<section id="links-up">
 			<img src="./images/icon-hamburger.svg" alt=""/>
-			<ul> 
+			<ul style="display:none"> 
 				<li>About</li>
   			<li>Services</li>
 				<li>Projects</li>
 				<li>Contact</li>
 			</ul>
 		</section>
-	</div>
-		<h2>We are creatives</h2>
+	</div >
+	<div id="top-two">
+		<h1>We are creatives</h1>
 		<img src="./images/icon-arrow-down.svg" alt="down arrow"/>
+	</div>
 	</div>
 	<div id="two-explain">
 		<div id="teone">
