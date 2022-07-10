@@ -10,8 +10,9 @@
 		  padding:2rem;
 			background-image:URL('./images/mobile/image-header.jpg');
 			background-size:100% 100%;
-			height: 30rem;
+			height: 40rem;
 			background-repeat:no-repeat;
+			
 		}
 		#top li{
 		  display: block;
@@ -20,36 +21,54 @@
 		#nav{
 		  display:grid;
 		  grid-template-columns: auto auto;
-		  height: 8rem;
+		  height: 11rem;
 		}
 		
-	
+		#links-up{
+			display:grid;
+			grid-template-rows:auto auto;
+			width:100%;
+			
+			place-items:end;
+			
+		}
+		#links-up div{
+			width:min-content;	
+			position: relative;
+			padding-right:2rem;
+			
+		}
+		#links-up img{
+			transition:all 1s ease-out;
+		}
 		#hamburger{
-		
-		  position: relative;
-		  left:80%
-		  }
-		#hamburger:hover{
-		  background-color: black;
+			position: relative;
+			width:min-content;
+			left:80%;
+			transition:all 1s ease-out;
+			
+		 }
+		#hamburger:hover+ #links-up img{
+		 	transform:translate(10%) rotate(90deg); 
 		}
 		#links-up ul{
-		  position: relative;
-		  z-index: 2;
-		  border:2px solid black;
-		  padding: 0.5rem;
-		  border-radius: 5px 0 5px 5px;
-		  width: min-content;
-		  left:25%;
-		  margin:0.7rem;
+			position: relative;
+		
+			border:1px solid black;
+			padding:0.7rem;
+			border-radius:5px 0 5px 5px;
+			background-color:white;
+			width:min-content;
+		
 		  
 		}
 		#links-up ul::before{
 		  content: "";
 		  position:absolute;
 		  bottom:100%;
-		  right:-2px;
-		  border-left: 0.8rem solid transparent;
-		  border-bottom: 0.8rem solid black;
+		  right:-1px;
+		  border-left: 1rem solid transparent;
+		  border-bottom: 1rem solid black;
 		  
 		  text-align: right
 		  
@@ -62,7 +81,7 @@
 		  
 		}
 		#top-two h1, #top-two img{
-		  padding: 0.7rem;
+		  padding: 0.8rem;
 		  text-transform: uppercase;
 		  letter-spacing: 4px;
 		  word-spacing: normal;
@@ -72,7 +91,8 @@
 		}
 		
 		#top-two img{
-		  
+		  position: relative;
+			bottom:-3.5rem;
 		}
 		
 		
