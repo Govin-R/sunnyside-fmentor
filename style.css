@@ -16,24 +16,31 @@
 		#top li{
 		  display: block;
 		}
+		
 		#nav{
 		  display:grid;
 		  grid-template-columns: auto auto;
+		  height: 8rem;
 		}
 		
-		#links-up{
-		  justify-self: self-end;
-		  align-items: center;
-		}
-		#links-up img{
-		  position:absolute;
-		  left:100%;
+	
+		#hamburger{
+		
+		  position: relative;
+		  left:80%
+		  }
+		#hamburger:hover{
+		  background-color: black;
 		}
 		#links-up ul{
 		  position: relative;
-		  right: 3rem;
+		  z-index: 2;
 		  border:2px solid black;
-		  padding:0.5rem;
+		  padding: 0.5rem;
+		  border-radius: 5px 0 5px 5px;
+		  width: min-content;
+		  left:25%;
+		  margin:0.7rem;
 		  
 		}
 		#links-up ul::before{
@@ -47,6 +54,27 @@
 		  text-align: right
 		  
 		}
+		#top-two{
+		
+		  display: grid;
+		  grid-template-rows: auto;
+		  place-items: center;
+		  
+		}
+		#top-two h1, #top-two img{
+		  padding: 0.7rem;
+		  text-transform: uppercase;
+		  letter-spacing: 4px;
+		  word-spacing: normal;
+		  font-size: 2.5rem;
+		  text-align: center;
+		  margin: 0;
+		}
+		
+		#top-two img{
+		  
+		}
+		
 		
 		
 		#two-explain{
@@ -55,6 +83,7 @@
 		}
 	
 		#two-explain img{
+		  
 			width:100vw;
 		}
 		#two-demo, #clients{
