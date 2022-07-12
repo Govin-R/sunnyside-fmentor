@@ -11,7 +11,7 @@
 		  padding:2rem;
 			background-image:URL('./images/mobile/image-header.jpg');
 			background-size:100% 100%;
-			height: 70vh;
+			height: 77vh;
 			background-repeat:no-repeat;
 			
 		}
@@ -26,24 +26,44 @@
 		}
 
 		.magic{
-			position:relative;
-			
-      width:97%;
+			position: absolute;
+			z-index:2;
+			top:7rem;
+			left:9%;
+      width:82%;
       background-color: white;
-      height:25vh;
-			display:grid;
-			
+      height:auto;
+			display:grid;	
 			place-items:center;
-
+			
+			visibility: hidden;
+			transition:all 300ms ease-in-out;
+			opacity:0;
 		}		
-    .links-up{
-         display: none;  
-    }
+    .visible{
+        visibility: visible;
+				opacity:1; 
+				
+			}
     #links-ul li{
       display: block ;
-      float:center;
+      padding: 10% 2rem;
       text-align: center;
+			font-size:1.2rem;
+			letter-spacing:1px;
+			
+			font-weight:bold;
+			opacity:0.5;
+			transition:all 200ms ease-in-out;
+			border-radius:99px;
+			
     }
+		#links-ul li:hover{
+			background-color:yellow;
+			
+			opacity:1;
+
+		}
     
 		#links-ul::before{
 		  content: "";
@@ -51,9 +71,23 @@
 		  bottom:100%;
 		 	right:0; 
 		  border-left: 1.5rem solid transparent;
-		  border-bottom: 1.5rem solid black;
+		  border-bottom: 1.5rem solid white;
 	
 		  
+		}
+		#top-two{
+			position:relative;
+			width:100%;
+			top:2rem;
+			font-size:1.3rem;
+			text-transform:uppercase;
+			text-align:center;
+			letter-spacing:0.5rem;
+			color:white;
+			display:grid;
+			grid-template-rows:auto auto;
+			place-items:center;
+			grid-gap:1.5rem;
 		}
 		
 		
@@ -67,6 +101,13 @@
 		  
 			width:100vw;
 		}
+		#teone-textarea :h1 ,#tetwo-textarea:h1{
+			text-align:center;
+			font-size:1rem;
+		}
+
+
+
 		#two-demo, #clients{
 			display:grid;
 			grid-template-columns:100vw;
@@ -115,5 +156,12 @@
 		ul{
 		  padding: 0;
 			
+		}
+
+		@media(min-width:580px){
+			#links-ul{
+				background-color:black;
+				color:white;
+			}
 		}
 
