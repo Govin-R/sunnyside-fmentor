@@ -19,18 +19,25 @@
 		#nav{
 		  dispay: grid;
 		  grid-template-columns:auto auto;
-		  justify-content: end;
-		
+			padding:1rem 0;
+		 		
 		}#hamburger{
-		  
+			float:right; 
 		}
-		
-    #links-up{
-      position:absolute;
-      width:80vw;
+
+		.magic{
+			position:relative;
+			
+      width:97%;
       background-color: white;
       height:25vh;
-      
+			display:grid;
+			
+			place-items:center;
+
+		}		
+    .links-up{
+         display: none;  
     }
     #links-ul li{
       display: block ;
@@ -42,11 +49,10 @@
 		  content: "";
 		  position:absolute;
 		  bottom:100%;
-		  right:-1px;
-		  border-left: 1rem solid transparent;
-		  border-bottom: 1rem solid black;
-		  
-		  text-align: right
+		 	right:0; 
+		  border-left: 1.5rem solid transparent;
+		  border-bottom: 1.5rem solid black;
+	
 		  
 		}
 		
