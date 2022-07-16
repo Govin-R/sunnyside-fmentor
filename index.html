@@ -36,7 +36,9 @@
 			<h1>Transform your brand</h1>
 			<p> We are a full-service creative agency specializing in helping brands grow fast. 
 			Engage your clients through compelling visuals that do most of the marketing for you.</p>
-			 <h4>Learn more</h4>
+			 <div id="learn-more1">
+			 		<h4 id="lrh1">Learn more <hr style="background-color:yellow" id="hr1"></h4>
+				</div>
 		</section>
 	</div>
 
@@ -45,22 +47,24 @@
 		<section id="tetwo-textarea">
 			<h1>Stand out to the right audience</h1>
 			<p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
-				<h4>Learn more</h4>
-		</section>
+			<div id="learn-more2">
+				<h4 id="lrh2">Learn more <hr style="background-color:red" id="hr2"></h4>
+			</div>
+					</section>
 	</div></div>
 
 	<div id="two-demo">
 		<div id="tdone">
-			<p>
-			<h2>Graphic design</h2>
+			<section>
+			<h2>Graphic design</h2><p>
   			Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
-			</p>
+			</p></section>
 		</div>
 		<div id="tdtwo">
-			<p>
-			<h2>Photography</h2>
+			<section>
+			<h2>Photography</h2><p>
   			Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
-			</p>
+			</p></section>
 		</div>
 	</div>
 
@@ -107,9 +111,9 @@
 
 
 	<div id="bottom-work">
+		<img src="./images/logo.svg" alt="brand logo" id="logo"/>
 	<div id="links-down">
-		<img src="./images/logo.svg" alt=""/>
- 		<ul>
+		 		<ul>
 				<li>About</li>
   			<li>Services</li>
 				<li>Projects</li>
@@ -117,27 +121,42 @@
  		</ul>
 	</div>
 
-	<div>
-		<figure>
+	<div id="botton-down">
 			<img src="./images/icon-facebook.svg" alt="fb"/>
 			<img src="./images/icon-instagram.svg" alt="instagram"/>
 			<img src="./images/icon-twitter.svg" alt="twitter"/>
 			<img src="./images/icon-pinterest.svg" alt="pinterest"/>
-		</figure>
-	</div></div>
+		
+	</div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/Govin-R/">Go</a>.
   </div>
 
 <script >
 	const hamburger = document.getElementById("hamburger");
 	const linksup = document.getElementById("links-up");
+	const lrh1 = document.getElementById("lrh1");
+	const lrh2 = document.getElementById("lrh2");
+	const hr1 = document.getElementById("hr1");
+	const hr2 = document.getElementById("hr2");
+
+	const hrDic={
+		"lrh1":hr1,
+		"lrh2":hr2
+	}
+
 	//console.log("you welcome");
 	hamburger.addEventListener("click",()=>{
 		linksup.classList.toggle("visible");
-		console.log(linksup.outerHTML)
+		console.log("best view after 310px")
 	});
+
+	[lrh1,lrh2].forEach(e=>(e.addEventListener("mouseover",(e)=>(hrDic[e.target.id].style.opacity=1))));
+	[lrh1,lrh2].forEach(e=>(e.addEventListener("mouseout",(e)=>(hrDic[e.target.id].style.opacity=0.5))));
+
+
+
 
 </script>
 </body>
