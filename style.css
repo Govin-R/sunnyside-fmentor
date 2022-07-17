@@ -17,7 +17,7 @@
 		  padding:2rem;
 			background-image:URL('./images/mobile/image-header.jpg');
 			background-size:100% 100%;
-			height: 82vh;
+			height: 83vh;
 			background-repeat:no-repeat;
 			
 		}
@@ -84,7 +84,7 @@
 		#top-two{
 			position:relative;
 			width:100%;
-			top:2rem;
+			top:3rem;
 			font-size:1.3rem;
 			text-transform:uppercase;
 			text-align:center;
@@ -111,7 +111,7 @@
 		#teone-textarea, #tetwo-textarea{
 			padding:4rem;
 			text-align:left;	
-			height:27rem;	
+			height:26rem;	
 		}
 		#teone-textarea p, #tetwo-textarea p{
 			padding-bottom:2rem;	
@@ -262,11 +262,11 @@
 
 		@media(min-width:790px){
 			#top{
-				height:42rem;
+				height:88vh;
 				background-image:URL(./images/desktop/image-header.jpg);
 			}
 			#top-two{
-				top:17%;
+				top:2.4rem;
 			}
 			#hamburger{
 				display:none;
@@ -317,35 +317,40 @@
 			display: flex;
 			flex-direction:row;
 			width:100vw;
+			height:38rem;
 			
 		}
 		#two-explain img{
-			width:50vw;
-			
+			width:50vw;			
 		}
+		
 		#tetwo{
 			display: flex;
 			flex-direction:row-reverse;
+			height:38rem;
 		}
 		#two-demo{
 			display:grid;
 			grid-template-columns:50% 50%;
 		}
 		#tdone{
-			height:35rem;
+			height:37rem;
 			background-image:URL("./images/desktop/image-graphic-design.jpg");
 			background-size:100% 100%;	
 		}
 
 		#tdtwo{
-			height:35rem;
+			height:37rem;
 			background-image:URL("./images/desktop/image-photography.jpg")
 			background-size:100% 100%;
 		}
 		#two-demo section{
 			padding:0 6rem;
 		}
-
+		
+		#clients{
+			height:37rem;
+		}
 		#clients section{
 			padding: 0 3rem;
 			display:flex;
